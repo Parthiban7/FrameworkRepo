@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+<listeners>
+<listener class-name="Utils.AnnotationTransformer"/>
+<listener class-name="Utils.ExtentReportUtil"/>
+</listeners>
+  <test name="Chrome Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Tests.SearchResultsPageTest"/>
+      <class name="Tests.HomePageTest"/>
+      <class name="Tests.DataProviderTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
